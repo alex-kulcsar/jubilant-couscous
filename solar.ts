@@ -74,19 +74,19 @@ namespace solar {
     /**
      * Image assets
      */
-    export let smallShadow: Image = img`
+    export const smallShadow: Image = img`
         5 5 5 5 5 5 5 5
         5 . . . . . . 5
         5 . . . . . . 5
         5 5 5 5 5 5 5 5
     `
-    export let smallPanel: Image = img`
+    export const smallPanel: Image = img`
         8 8 8 8 8 8 8 8
         8 9 8 8 8 9 8 8
         8 8 9 8 8 8 9 8
         8 8 8 8 8 8 8 8
     `
-    export let largeShadow: Image = img`
+    export const largeShadow: Image = img`
         5 5 5 5 5 5 5 5 5 5 5 5
         5 . . . . . . . . . . 5
         5 . . . . . . . . . . 5
@@ -94,7 +94,7 @@ namespace solar {
         5 . . . . . . . . . . 5
         5 5 5 5 5 5 5 5 5 5 5 5
     `
-    export let largePanel: Image = img`
+    export const largePanel: Image = img`
         8 8 8 8 8 8 8 8 8 8 8 8
         8 8 8 8 8 8 8 8 8 9 8 8
         8 8 9 8 8 8 8 8 9 9 9 8
@@ -102,7 +102,7 @@ namespace solar {
         8 8 9 8 8 8 8 8 8 8 8 8
         8 8 8 8 8 8 8 8 8 8 8 8
     `
-    export let sun: Image = img`
+    export const sun: Image = img`
         5 . . . . . . 5 . . . . . . 5 .
         . 5 . . 5 5 5 5 5 5 5 . . 5 . .
         . . 5 5 5 5 5 5 5 5 5 5 5 . . .
@@ -120,19 +120,19 @@ namespace solar {
         5 . . . . . . 5 . . . . . . 5 .
         . . . . . . . . . . . . . . . .
     `
-    export let sunlight: Image = img`
+    export const sunlight: Image = img`
         5
         5
         5
         5
     `
-    export let reducedSunlight: Image = img`
+    export const reducedSunlight: Image = img`
         4
         4
         4
         4
     `
-    export let cloud: Image = img`
+    export const cloud: Image = img`
         . . c c c c c c c c c c c c . .
         . c 1 1 1 1 1 1 1 1 1 1 1 1 c .
         . . c 1 1 1 1 1 1 1 1 1 1 1 1 c
@@ -142,7 +142,7 @@ namespace solar {
         c 1 1 1 1 1 1 1 1 1 1 1 1 c . .
         . c c c c c c c c c c c c . . .
     `
-    export let playerAvatar: Image = img`
+    export const playerAvatar: Image = img`
         . . . . . . . f f f f f . . . .
         . . . . . . f e e e e e f . . .
         . . . . . f e e e d d d d f . .
@@ -160,7 +160,7 @@ namespace solar {
         . . . f d b b d d c d d f . . .
         . . . f f f f f f f f f . . . .
     `
-    export let lawn: Image = img`
+    export const lawn: Image = img`
         7777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777
         7777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777
         7777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777
