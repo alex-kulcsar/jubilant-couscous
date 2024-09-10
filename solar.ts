@@ -17,7 +17,6 @@ namespace solar {
     }
 
     //% block="move sun sprite $theSun"
-    //% theSun.defl=sunSprite
     export function moveSun(theSun: Sprite) {
         ticks = (game.runtime() - runtimeStart) / 100
         sunX = 160 - 2 * ticks / 3
@@ -26,7 +25,6 @@ namespace solar {
     }
 
     //% block="attach shadow $shadow to player $player"
-    //% shadow.defl=shadowSprite player.defl=mySprite
     export function attachShadowToPlayer(shadow: Sprite, player: Sprite) {
         if (shadow !== null && player !== null) {
             player.z = shadow.z + 1
@@ -68,7 +66,6 @@ namespace solar {
     }
 
     //% block="add cloud sprite $cloud"
-    //% cloud.defl=cloudSprite
     export function addCloud(cloud: Sprite) {
         cloud.setPosition(200, 200)
         timer.background(function () {
