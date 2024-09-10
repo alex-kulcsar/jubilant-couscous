@@ -2,7 +2,7 @@ info.onLifeZero(function () {
 
 })
 
-//% weight=100 color=#BC8D15 icon="\uf185"
+//% weight=0 color=#BC8D15 icon="\uf185"
 namespace solar {
     let initCredits = 0
     let ticks = 0
@@ -16,7 +16,7 @@ namespace solar {
         initCredits = num
     }
 
-    //% block
+    //% block="move sun sprite $theSun"
     export function moveSun(theSun: Sprite) {
         ticks = (game.runtime() - runtimeStart) / 100
         sunX = 160 - 2 * ticks / 3
@@ -24,7 +24,7 @@ namespace solar {
         theSun.setPosition(sunX, sunY)
     }
 
-    //% block
+    //% block="attach shadow $shadow to player $player"
     export function attachShadowToPlayer(shadow: Sprite, player: Sprite) {
         if (shadow !== null && player !== null) {
             player.z = shadow.z + 1
@@ -37,7 +37,7 @@ namespace solar {
         })
     }
 
-    //% block
+    //% block="is sunlight made?"
     export function isSunlightMade() {
         let deltaX: number = Math.abs(sunX - 80)
         let chance: number = 90 * (80 - deltaX) / 80 + 10
@@ -49,6 +49,7 @@ namespace solar {
     }
 
     //% block
+    //% theDay.defl=1
     export function setupDay(theDay: number) {
         if (theDay == 1) {
             info.setLife(initCredits)
@@ -64,7 +65,7 @@ namespace solar {
         info.startCountdown(24)
     }
 
-    //% block
+    //% block="add cloud sprite $cloud"
     export function addCloud(cloud: Sprite) {
         cloud.setPosition(200, 200)
         timer.background(function () {
