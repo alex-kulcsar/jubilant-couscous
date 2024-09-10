@@ -27,8 +27,10 @@ namespace solar {
     //% block
     export function attachShadowToPlayer(shadow: Sprite, player: Sprite) {
         game.onUpdate(function () {
-            shadow.x = player.right
-            shadow.y = player.top
+            if (shadow !== null && player !== null) {
+                shadow.x = player.right
+                shadow.y = player.top
+            }
         })
     }
 
