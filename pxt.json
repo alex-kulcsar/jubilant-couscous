@@ -25,6 +25,5 @@
     "supportedTargets": [
         "arcade"
     ],
-    "preferredEditor": "blocksprj",
-    "assetPack": true
+    "preferredEditor": "tsprj"
 }
