@@ -1,3 +1,16 @@
+namespace SpriteKind {
+    // %isKind
+    export const Scenery = SpriteKind.create()
+    // %isKind
+    export const SolarPanel = SpriteKind.create()
+    // %isKind
+    export const Sunlight = SpriteKind.create()
+    // %isKind
+    export const Cloud = SpriteKind.create()
+    // %isKind
+    export const ReducedSunlight = SpriteKind.create()
+}
+
 info.onLifeZero(function () {
 
 })
