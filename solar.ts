@@ -1,13 +1,13 @@
 namespace SpriteKind {
-    // %isKind
+    //% isKind
     export const Scenery = SpriteKind.create()
-    // %isKind
+    //% isKind
     export const SolarPanel = SpriteKind.create()
-    // %isKind
+    //% isKind
     export const Sunlight = SpriteKind.create()
-    // %isKind
+    //% isKind
     export const Cloud = SpriteKind.create()
-    // %isKind
+    //% isKind
     export const ReducedSunlight = SpriteKind.create()
 }
 
